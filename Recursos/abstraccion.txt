@@ -1,0 +1,62 @@
+public abstract class FiguraGeometrica {
+
+  /*En este ejemplo, la clase abstracta FiguraGeometrica define un método abstracto llamado calcularArea()
+ que debe ser implementado por las clases
+  que la hereden.*/
+  public abstract double calcularArea();
+}
+
+public class Rectangulo extends FiguraGeometrica {
+  private double base;
+  private double altura;
+
+  public Rectangulo(double base, double altura) {
+    this.base = base;
+    this.altura = altura;
+  }
+
+  public double getBase() {
+    return base;
+  }
+
+  public void setBase(double base) {
+    this.base = base;
+  }
+
+  public double getAltura() {
+    return altura;
+  }
+
+  public void setAltura(double altura) {
+    this.altura = altura;
+  }
+  /*La clase Rectangulo hereda de FiguraGeometrica y proporciona una implementación 
+concreta del método calcularArea(), que calcula el 
+  área de un rectángulo multiplicando su base por su altura.*/
+
+  @Override
+  public double calcularArea() {
+    return base * altura;
+  }
+}
+
+
+public static void main(String[] args) {
+    
+
+    Rectangulo r1 = new Rectangulo(3,3);
+    
+    double areaR1 = r1.calcularArea();
+    
+    System.out.println(areaR1);
+}
+
+En JAVA las clases abstractas son útiles en Java para proporcionar una funcionalidad 
+común que se comparte entre las subclases y para definir métodos abstractos que se deben 
+implementar en las subclases.
+
+Al utilizar la clase abstracta FiguraGeometrica como una abstracción, se pueden definir 
+métodos comunes que deben ser implementados por las clases que heredan de ella, pero sin 
+necesidad de proporcionar una implementación concreta para todos los métodos. De esta forma, 
+se puede definir un comportamiento común para todas las figuras geométricas, pero permitiendo 
+que cada figura implemente su propio método para calcular su área específica.

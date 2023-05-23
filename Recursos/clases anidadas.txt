@@ -1,0 +1,35 @@
+Clases internas:
+
+public class claseExterna{
+	int atribA;
+	class claseInterna{
+		int atribA = 13;
+		void metodoA(){
+			System.out.println("Atributo a:"+atribA);
+		}
+	}
+}
+
+Clases locales:
+
+public class claseExterna{
+final int constA = 13;
+void metodoExterno(){
+   		class claseLocal{
+   	 		void metodoA(){
+   		 		System.out.println("constA= "+constA);
+  		 	}
+   	 	}
+    	}
+}
+
+Clases anónimas:
+
+public class claseExterna{
+   	 final int constA = 13;
+   	 int atribA = new claseAnónima(){
+   		 void metodoA(){
+   			 System.out.println("constA= " + constA);
+   		 }
+   	 };
+}

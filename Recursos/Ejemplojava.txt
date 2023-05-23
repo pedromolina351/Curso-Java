@@ -1,0 +1,43 @@
+/////////////////// CLASE PERSONA ///////////////////////////////////////
+package javaapplication1;
+
+
+public class Persona {
+    /*Atributos: Son propiedades que definen al objeto
+        por ejemplo una persona tiene: nombre, edad, direccion
+    */
+    public String nombre;
+    public int edad;
+    public String direccion;
+    
+    /*Metodos: Describen el comportamiento, por ejemplo una
+        persona puede realizar las siguientes acciones
+        o comportamientos: hablar, caminar, comer 
+    */
+    
+    public void hablar() {
+        System.out.println("Hola, mi nombre es "+nombre+" tengo "+edad+" años");
+    }
+    public void caminar() {
+        System.out.println("Soy "+nombre+" y estoy caminando");
+    }
+    public void comer(String comida){
+        System.out.println("Estoy comiendo "+comida);
+    }
+}
+
+///////////////////////////// CLASE MAIN //////////////////////////////////////////
+    public static void main(String[] args) {
+        //final double pi= 3.141695;
+        //Ejecución secuencial
+        //Podemos acceder a los atributos de persona con el .
+        Persona persona1 = new Persona();
+        persona1.nombre = "Juan";
+        persona1.edad = 25;
+        persona1.direccion = "Calle 123";
+
+        persona1.hablar(); // Imprime "Hola, mi nombre es Juan y tengo 25 años."
+        persona1.caminar(); // Imprime "Juan está caminando a su dirección en Calle 123."
+        persona1.comer("pizza"); // Imprime "Juan está comiendo pizza."
+        
+    }

@@ -1,0 +1,8 @@
+Las variables de entorno se configuran para que el sistema reconozca cuando se está ejecutando un archivo con extensión .java
+Ir a la consola y ejecutar el comando javac
+
+Ir a la carpeta java/jdk/bin 
+Localizar el javac y java.exe
+copiar la ruta a bin
+Ir a configuración avanzada del sistema/ variables de entorno.
+Parte inferior, donde dice variables del sistema / PATH

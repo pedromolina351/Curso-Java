@@ -1,0 +1,49 @@
+Aquí te muestro un ejemplo de cómo utilizar un array en un programa orientado a objetos en Java:
+
+Supongamos que queremos modelar un programa para almacenar información de una lista de estudiantes, en donde cada estudiante tiene un nombre y una nota. En este caso, podríamos utilizar un array de objetos de la clase Estudiante, que se define de la siguiente manera:
+
+public class Estudiante {
+  private String nombre;
+  private double nota;
+
+  public Estudiante(String nombre, double nota) {
+    this.nombre = nombre;
+    this.nota = nota;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public double getNota() {
+    return nota;
+  }
+
+  public void setNota(double nota) {
+    this.nota = nota;
+  }
+}
+
+Luego, en la clase principal, podemos crear un array de objetos Estudiante y llenarlo con los datos de cada estudiante:
+public class Programa {
+  public static void main(String[] args) {
+    // Creamos un array de objetos Estudiante
+    Estudiante[] estudiantes = new Estudiante[3];
+
+    // Llenamos el array con los datos de cada estudiante
+    estudiantes[0] = new Estudiante("Juan", 8.5);
+    estudiantes[1] = new Estudiante("Ana", 9.2);
+    estudiantes[2] = new Estudiante("Pedro", 7.8);
+
+    // Imprimimos los datos de cada estudiante
+    for (int i = 0; i < estudiantes.length; i++) {
+      System.out.println("Estudiante " + (i + 1) + ":");
+      System.out.println("Nombre: " + estudiantes[i].getNombre());
+      System.out.println("Nota: " + estudiantes[i].getNota());
+    }
+  }
+}
+
+En este ejemplo, creamos un array de objetos Estudiante con tres elementos y lo llenamos con los datos de cada estudiante utilizando el constructor de la clase. Luego, en el ciclo for, imprimimos los datos de cada estudiante utilizando los métodos getter de la clase Estudiante.
+
+Es importante recordar que en Java, los arrays tienen un tamaño fijo que se define al momento de su creación y no se puede modificar después. Además, los índices del array comienzan en cero.

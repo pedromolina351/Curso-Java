@@ -1,0 +1,27 @@
+import java.lang.Math;
+
+class Circulo extends FiguraGeometrica {
+    private double radio;
+
+    public Circulo(double radio) {
+        this.radio = radio;
+    }
+
+    public double area() {
+        return Math.PI * Math.pow(radio, 2);
+	//pow(base,exponente)
+    }
+}
+
+/*Hay muchas otras funciones matemáticas útiles
+ en la librería Math, como sin(), cos(), tan(), pow(), sqrt()*/
+
+public class EjemploPolimorfismo {
+    public static void main(String[] args) {
+        FiguraGeometrica figura1 = new Circulo(5);
+        FiguraGeometrica figura2 = new Rectangulo(4, 6);
+
+        System.out.println("El área del círculo es: " + figura1.area());
+        System.out.println("El área del rectángulo es: " + figura2.area());
+    }
+}

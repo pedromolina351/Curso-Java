@@ -1,0 +1,32 @@
+int calificacion;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        calificacion = scanner.nextInt();
+        
+        /*If simple*/
+        if(calificacion >= 65)
+            System.out.println("Aprobado");
+        
+        if(calificacion < 65)
+            System.out.println("Reprobado");
+        
+        /*If else*/
+        if(calificacion >= 65)
+            System.out.println("Aprobado");
+        else
+            System.out.println("Reprobado");
+        
+        
+        /*Operador ternario*/
+        System.out.println(calificacion >= 65 ? "El estudiante aprobó el curso de JAVA" : "El estudiante reprobó el curso de JAVA");
+       
+        /**/
+        if(calificacion >= 65)
+            System.out.println("Aprobado");
+        else if(calificacion < 65)
+            System.out.println("Reprobado");
+        
+        /*Una buena práctica de programación es aplicar llaves {}
+          dentro de cada estructura de control para indicar 
+          el inicio y final de una expresión.*/

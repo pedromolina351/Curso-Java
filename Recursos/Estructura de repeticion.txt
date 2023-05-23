@@ -1,0 +1,99 @@
+Si quisieramos 
+int i = 1;
+while (i <= 10) {
+  System.out.println(i);
+  i++;
+}        
+
+int contador = 0;
+int valorMaximo;
+Scanner scanner = new Scanner(System.in);
+valorMaximo = scanner.nextInt();
+        
+while (contador <= valorMaximo){
+    System.out.println(contador);
+       contador = contador+1;
+}
+        
+/*Un error de programación comun es cuando
+  la expresión lógica que utilizamos nunca
+  tomará un valor falso, por lo que caemos en
+  lo que se llama un bucle infinito.
+        
+while (contador <= valorMaximo){
+   System.out.println(contador);
+   contador++;
+   valorMaximo++;
+}
+        
+*/
+------------------------------ Ciclo for ---------------------------
+
+for (int i = 0; i < 10; i++) {
+    System.out.println("El valor de i es: " + i);
+}
+
+
+import java.util.Scanner;
+
+public class EjemploFor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingresa un número entero positivo: ");
+        int n = scanner.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            System.out.println("El número es: " + i);
+        }
+    }
+}
+
+------------------------------------------------------------------------
+------------------------- Case ---------------------------
+
+En Java, case es una palabra clave utilizada en la estructura de control de 
+flujo switch. switch es una forma más eficiente de expresar un conjunto de 
+sentencias if-else cuando se comparan varios valores con una misma variable.
+
+int diaSemana = 3;
+String nombreDia;
+switch (diaSemana) {
+  case 1:
+    nombreDia = "Lunes";
+    break;
+  case 2:
+    nombreDia = "Martes";
+    break;
+  case 3:
+    nombreDia = "Miércoles";
+    break;
+  case 4:
+    nombreDia = "Jueves";
+    break;
+  case 5:
+    nombreDia = "Viernes";
+    break;
+  case 6:
+    nombreDia = "Sábado";
+    break;
+  case 7:
+    nombreDia = "Domingo";
+    break;
+  default:
+    nombreDia = "Día de la semana inválido";
+}
+System.out.println("Hoy es " + nombreDia);
+
+Cada case representa una posible coincidencia con el valor de la 
+variable de control switch. El código dentro de cada case se ejecutará 
+si la variable coincide con el valor especificado en ese case. 
+El break se utiliza para salir del bloque switch.
+
+El default es opcional y se utiliza para especificar el código que se 
+ejecutará si la variable de control switch no coincide con ninguno de 
+los case anteriores.
+
+En este ejemplo, la variable diaSemana tiene un valor de 3, lo que 
+significa que se ejecutará el código dentro del case 3. El resultado 
+impreso en la consola será "Hoy es Miércoles". Si diaSemana tuviera un 
+valor que no coincide con ningún case, se ejecutaría el código dentro del default.

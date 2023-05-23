@@ -1,0 +1,50 @@
+public class Animal {
+    private String nombre;
+
+    
+    public Animal(String nombre) {
+      this.nombre = nombre;
+      /* Un constructor es un método especial que se utiliza para
+      inicializar los objetos de una clase. 
+      En este caso, el constructor recibe un parámetro nombre
+      y se lo asigna a la propiedad nombre del objeto creado. 
+      De esta forma, cuando se crea una nueva instancia de la 
+      clase Animal, se debe pasar un nombre como argumento al 
+      constructor.*/
+    }
+
+    public void hacerSonido() {
+      System.out.println("El animal hace un sonido");
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+}
+
+public class Perro extends Animal{
+    private String raza;
+    
+    public Perro(String nombre, String raza) {
+        super(nombre);
+        this.raza = raza;
+        /*El constructor de la clase Perro utiliza
+        la palabra clave super para llamar al constructor
+        de la clase padre Animal.
+        
+        En Java, cuando se crea un objeto de una subclase, 
+        primero se llama al constructor de la clase padre para 
+        inicializar las variables de instancia heredadas antes de 
+        continuar con la inicialización de las variables de instancia 
+        propias de la subclase. Por lo tanto, en el constructor de
+        la clase Perro, se llama al constructor de la clase padre Animal 
+        usando super(nombre), para que el nombre del perro se le 
+        pase a la clase padre y se establezca en la propiedad nombre.*/
+    }
+    
+}

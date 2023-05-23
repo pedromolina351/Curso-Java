@@ -1,0 +1,62 @@
+package primerproyecto;
+
+
+public class Persona {
+    /*Atributos: son privados*/
+    private String nombre;
+    private int edad;
+    
+    /*Metodos son publicos, esto para aplicar el encapsulamiento
+    ya que oculta la implementacion interna de la clase y se
+    impide el acceso directo a los atributos desde afuera.
+    
+    Los Setters permiten establecer el valor del atributo
+    desde fuera de la clase.
+    
+    Los Getters permiten obtener el valor del atributo
+    fuera de la clase.
+    */
+    public void setNombre(String nombre){
+        /*Se utiliza this.nombre para evitar ambiguedades
+        y definir que nos referimos al atributo de la clase
+        y no al parámetro que el método recibe.
+        */
+        this.nombre = nombre;
+    }
+    
+    public String getNombre(){
+        
+        return nombre;
+    }
+       
+}
+
+public class PrimerProyecto {
+
+ 
+    public static void main(String[] args) {
+        
+        //Crear una instancia
+        Persona persona1 = new Persona();
+        /*Una clase es un molde de objetos, por lo que
+        de una clse podemos crear o instanciar múltiples
+        objetos*/
+        Persona persona2 = new Persona();
+        
+        
+        // Acceder a los atributos de la clase persona
+        //persona1.nombre = "Carlos";
+        persona1.setNombre("Carlos");
+        persona2.setNombre("Juan");
+        //persona1.edad = 15;
+        
+
+        //Acceder a los metodos de la clase persona
+       /* persona1.caminar();
+        persona1.comer("Baleadas");
+        persona1.dormir();*/
+        
+        
+    }
+    
+}

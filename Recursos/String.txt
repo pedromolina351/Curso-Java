@@ -1,0 +1,74 @@
+package javaapplication1;
+
+public class JavaApplication1 {
+    
+    final static double pi= 3.141695;
+
+    public static void main(String[] args) {
+        //final double pi= 3.141695;
+        //Ejecución secuencial
+        
+        System.out.println("Pi "+pi);
+        int regalos = 20;
+        System.out.println("En mi cumpleaños, quiero "+regalos+" regalos");
+        regalos = 30;
+        System.out.println("En mi cumpleaños, quiero "+regalos+" regalos");
+        
+        String hola = "En mi cumpleaños quiero "+regalos+" regalos";
+        System.out.println(hola);
+    }
+    
+}
+
+Una de las características más útiles de la clase String en Java es que es inmutable. 
+Esto significa que una vez que se crea un objeto String, no se puede modificar. 
+En lugar de eso, se crean nuevos objetos String cuando se realizan operaciones como concatenación o sustitución de caracteres.
+
+Por ejemplo, para concatenar dos cadenas de texto en Java, puedes usar el operador +:
+
+
+String nombre = "Juan";
+String apellido = "Pérez";
+String nombreCompleto = nombre + " " + apellido;
+System.out.println(nombreCompleto); // Imprime "Juan Pérez"
+En este ejemplo, se crean tres variables de tipo String: nombre, apellido y nombreCompleto. 
+Luego se concatenan las variables nombre y apellido utilizando el operador +, y se asigna el resultado a la variable nombreCompleto.
+
+También puedes utilizar métodos de la clase String para realizar diferentes operaciones con cadenas de texto, 
+como buscar una subcadena, obtener la longitud de una cadena, convertir a mayúsculas o minúsculas, entre otros.
+
+
+String frase = "La programación es divertida!";
+int longitud = frase.length(); // Devuelve la longitud de la cadena
+String subcadena = frase.substring(3, 14); // Devuelve la subcadena desde el índice 3 hasta el 13
+String enMayusculas = frase.toUpperCase(); // Convierte la cadena a mayúsculas
+String enMinusculas = frase.toLowerCase(); // Convierte la cadena a minúsculas
+
+En resumen, la variable tipo String en Java es una herramienta muy útil para trabajar con cadenas de texto. 
+Permite declarar y manipular variables de texto, y cuenta con una gran cantidad de métodos para realizar operaciones sobre las mismas.
+
+
+package ejemplo;
+
+import ejemplo.Carro;
+import java.util.Scanner;
+
+
+public class Ejemplo {
+    
+
+    public static void main(String[] args) {
+        int num;
+        
+        Scanner leer = new Scanner(System.in);
+        
+        num = leer.nextInt();
+        nextLine
+        
+        
+    }
+    
+}
+
+
+

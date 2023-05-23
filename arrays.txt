@@ -1,0 +1,21 @@
+char arrayCaracteres[];
+arrayCaracteres = new char[10];
+arrayCaracteres[2] = 'b';
+char x = arrayCaracteres[2];
+
+char array[];
+array = new char[10];
+
+for (int x=0;x<array.length;x++)
+  System.out.printnln(array[x]);
+
+Incialización de Arrays en Java
+Existe una forma de inicializar un array en Java con el contenido, 
+amoldándose su tamaño al número de elementos a los que le inicialicemos.
+Para inicializar un array Java utilizaremos las llaves de la siguiente forma:
+
+tipo_dato array[] = {elemento1,elemento2,...,elementoN};
+
+// Tenemos un array de 5 elementos.
+char array[] = {'a','b','c','d','e'};
+
